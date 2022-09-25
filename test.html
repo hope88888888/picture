@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>
+        NEAUOJ    </title>
+    
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="template/bs3/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="template/bs3/bootstrap-theme.min.css">
+<link rel="stylesheet" href="template/bs3/white.css">
+<link rel="stylesheet" href="template/bs3/katex.min.css">
+<link rel="stylesheet" href="template/bs3/mathjax.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        @media (max-width: 768px) {
+            .tb {
+                zoom: 30%;
+            }
+        }
+
+        @media (max-width: 682px) {
+            .tb {
+                zoom: 20%;
+            }
+        }
+
+        #gd {
+            width: 70%;
+        }
+
+        @media (max-width: 768px) {
+            #gd {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <!-- Static navbar -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav nav-tabs">
+                                <li  class='active'><a
+                            href="./"><span class="glyphicon glyphicon-home"
+                                                                aria-hidden="true"></span> NEAUOJ                    </a></li>
+                                                    <li ><a
+                                href="problemset.php"><span class="glyphicon glyphicon-book"
+                                                                                   aria-hidden="true"></span> 问题                        </a></li>
+                    <li ><a
+                                href="category.php"><span class="glyphicon glyphicon-th"
+                                                                                 aria-hidden="true"></span> 来源                        </a></li>
+                    <li ><a
+                                href="status.php"><span
+                                    class="glyphicon glyphicon-play-circle"
+                                    aria-hidden="true"></span> 状态</a></li>
+                    <li ><a
+                                href="ranklist.php"><span class="glyphicon glyphicon-thumbs-up"
+                                                                                 aria-hidden="true"></span> 排名                        </a></li>
+                    <li ><a
+                                href="contest.php"><span class="glyphicon glyphicon-fire"
+                                                                                aria-hidden="true"></span> 比赛                        </a></li>
+                                <li ><a
+                            href="news.php"><span class="glyphicon glyphicon-list-alt"
+                                                                         aria-hidden="true"></span> 新闻                    </a></li>
+                <!--                <li --><!-- ><a-->
+                <!--                            href="-->
+                <!--recent-contest.php"><span class="glyphicon glyphicon-globe"-->
+                <!--                                                                                   aria-hidden="true"></span> -->                <!--                    </a></li>-->
+                <li ><a
+                            href="introduce.php">
+                            <span class="glyphicon glyphicon-info-sign"
+                                  aria-hidden="true"></span> 介绍</a></li>
+                <li ><a
+                            href="authentic.php">
+                            <span class="glyphicon glyphicon-saved"
+                                  aria-hidden="true"></span> 认证</a></li>
+                <!--
+                <li ><a href="jxcg.php">
+                            <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> 教学成果</a></li>
+-->
+                <ul class="nav nav-tabs navbar-right">
+                    <li><a href=loginpage.php><span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> 登录</a></li><li><a href=registerchoose.php><span class='glyphicon glyphicon-registration-mark' aria-hidden='true'></span> 注册</a></li>                </ul>
+            </ul>
+                        <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+  -->
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <center>
+            <table align="center">
+                <tbody>
+                <tr>
+                    <td><a href="https://www.neauacm.cn" target="_blank">
+                            <img src="home/images/neauacm.png" height="100" width="100" style="margin:16px"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.neauacm.cn" target="_blank" class="www"><h2>东北农业大学ACM集训队</h2></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+                        <div class="jumbotron" id="gd">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="/image/index1.png" alt="First slide" width="100%">
+                        </div>
+                        <div class="item">
+                            <img src="/image/index2.png" alt="Second slide" width="100%">
+                        </div>
+                        <div class="item">
+                            <img src="/image/index3.png" alt="Third slide" width="100%">
+                        </div>
+                        <div class="item">
+                            <img src="/image/index4.png" alt="Fourth slide" width="100%">
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="carousel-control left" href="#myCarousel"
+                       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true"
+                                                class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="carousel-control right" href="#myCarousel"
+                       data-slide="next"> <span _ngcontent-c3="" aria-hidden="true"
+                                                class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+            <table width="90%" style="table-layout: fixed" class="tb">
+                <tr>
+                    <td width="49%">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <td width="10%"></td>
+                                        <td width="80%"><h4 style="text-align: center">News and Notice</h4></td>
+                                        <td width="10%" valign="bottom" align="right"><a
+                                                    href="https://www.neauacm.cn/news/"><b>more</b>&gt;&gt;</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel-body content">
+                                <table class="table table-hover" width="100%">
+                                    <tr style="text-align: center">
+                                        <td width="80%">Title</td>
+                                        <td class='hidden-xs' width="20%">Time</td>
+                                    </tr>
+                                    <tr><td style='text-align: center'>	<a href='https://www.neauacm.cn/news/?news_id=1052'>我校在十六届东北地区程序设计竞赛取得优异成绩</a></td><td class='hidden-xs'style='text-align: center'>	2022-09-01</td></tr><tr><td style='text-align: center'>	<a href='https://www.neauacm.cn/news/?news_id=1051'>我校在第十七届黑龙江省大学生程序设计竞赛取得优异成绩</a></td><td class='hidden-xs'style='text-align: center'>	2022-09-01</td></tr><tr><td style='text-align: center'>	<a href='https://www.neauacm.cn/news/?news_id=1050'>关于2022年NEAUACM集训队管理层任命结果的通知</a></td><td class='hidden-xs'style='text-align: center'>	2022-06-22</td></tr><tr><td style='text-align: center'>	<a href='https://www.neauacm.cn/news/?news_id=1047'>我校在第46届ICPC沈阳站取得优异成绩</a></td><td class='hidden-xs'style='text-align: center'>	2021-11-22</td></tr><tr><td style='text-align: center'>	<a href='https://www.neauacm.cn/news/?news_id=1046'>我校在2021CCPC广州站取得优异成绩</a></td><td class='hidden-xs'style='text-align: center'>	2021-11-14</td></tr>                                </table>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="2%"></td>
+                    <td width="49%">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 style="text-align: center">Ranklist in <b>7</b> Days</h4>
+                            </div>
+                            <div class="panel-body content">
+                                <table class="table table-hover" width="100%">
+                                    <tr style="text-align: center">
+                                        <td width="10%">Rank</td>
+                                        <td class="hidden-xs" width="20%">User_ID</td>
+                                        <td width="40%">Nick_Name</td>
+                                        <td class="hidden-xs" width="10%">Acceptted</td>
+                                        <td class="hidden-xs" width="10%">Submitted</td>
+                                        <td class="hidden-xs" width="10%">AC_Rate</td>
+                                    </tr>
+                                    <tr><td style='text-align: center'>	1</td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='userinfo.php?user=A19220396'>A19220396</a></div></td><td style='text-align: center'>	<div class=center>微机2203石子豪</div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220396&jresult=4'>82</a></div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220396'>121</a></div></td><td class='hidden-xs'style='text-align: center'>	67.769%</td></tr><tr><td style='text-align: center'>	2</td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='userinfo.php?user=A19220153'>A19220153</a></div></td><td style='text-align: center'>	<div class=center>微机2205毛旭超</div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220153&jresult=4'>67</a></div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220153'>119</a></div></td><td class='hidden-xs'style='text-align: center'>	56.303%</td></tr><tr><td style='text-align: center'>	3</td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='userinfo.php?user=A19220438'>A19220438</a></div></td><td style='text-align: center'>	<div class=center>微机2204朱彦铭</div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220438&jresult=4'>54</a></div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220438'>140</a></div></td><td class='hidden-xs'style='text-align: center'>	38.571%</td></tr><tr><td style='text-align: center'>	4</td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='userinfo.php?user=A19220193'>A19220193</a></div></td><td style='text-align: center'>	<div class=center>微机2205刘泽</div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220193&jresult=4'>41</a></div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19220193'>81</a></div></td><td class='hidden-xs'style='text-align: center'>	50.617%</td></tr><tr><td style='text-align: center'>	5</td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='userinfo.php?user=A19200191'>A19200191</a></div></td><td style='text-align: center'>	<div class=center>微机2004李子豪</div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19200191&jresult=4'>38</a></div></td><td class='hidden-xs'style='text-align: center'>	<div class=center><a href='status.php?user_id=A19200191'>58</a></div></td><td class='hidden-xs'style='text-align: center'>	65.517%</td></tr>                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+</div>
+
+</div>
+<!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="template/bs3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="template/bs3/bootstrap.min.js"></script>
+
+<center>
+	<div class="panel panel-info">
+		<a href="#top" style="color:#696969;text-decoration:none;">
+			<div class="panel-footer">
+				<table width="90%"><tr style="text-aglin:center">
+				<td width="10%"><!--<span class='glyphicon glyphicon-chevron-up' aria-hidden='true'></span>-->
+					<img src="/image/nuli.gif"/>
+				</td>
+				<td style="text-align:center;"><div style="text-align:center;">Northeast Agricultral University Online Judge 19.07</div>
+				<div style="text-align:center;">Technical support provided by NEAU_ACM_Team from 2017 to 2022</div></td>
+				<td width="10%"><span class='glyphicon glyphicon-chevron-up' aria-hidden='true'></span></td>
+				</tr></table>
+			</div>
+		</a>
+	</div>
+</center>
+<style>
+    .www {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .www:hover {
+        color: #225780;
+        text-decoration: none;
+    }
+</style>
+<script language="javascript" type="text/javascript" src="include/jquery.flot.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var d1 = null;
+        var d2 = null;
+        $.plot($("#submission"), [{
+            label: "提交",
+            data: d1,
+            lines: {
+                show: true
+            }
+        }, {
+            label: "正确",
+            data: d2,
+            bars: {
+                show: true
+            }
+        }], {
+            grid: {
+                backgroundColor: {
+                    colors: ["#fff", "#eee"]
+                }
+            },
+            xaxis: {
+                mode: "time" //,
+                //max:(new Date()).getTime(),
+                //min:(new Date()).getTime()-100*24*3600*1000
+            }
+        });
+    });
+    //alert((new Date()).getTime());
+</script>
+</body>
+</html>
+<!--not cached-->
